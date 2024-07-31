@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/oo/Desktop/CSC3150/HW/Assignment2/Assignment_2_121090544/source",
+      "program": "/Users/oo/Desktop/CSC3150/HW/Assignment2/Assignment_2_121090544/source/build/Debug/outDebug"
+    }
+  ]
+}

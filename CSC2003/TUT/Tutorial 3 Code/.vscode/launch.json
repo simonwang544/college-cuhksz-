@@ -1,0 +1,69 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AddByDigit",
+            "request": "launch",
+            "mainClass": "AddByDigit",
+            "projectName": "Tutorial 3 Code_7bba7699"
+        },
+        {
+            "type": "java",
+            "name": "IntegerLog1",
+            "request": "launch",
+            "mainClass": "IntegerLog1",
+            "projectName": "Tutorial 3 Code_7bba7699"
+        },
+        {
+            "type": "java",
+            "name": "IntegerLog2",
+            "request": "launch",
+            "mainClass": "IntegerLog2",
+            "projectName": "Tutorial 3 Code_7bba7699"
+        },
+        {
+            "type": "java",
+            "name": "PolynomialDerivative",
+            "request": "launch",
+            "mainClass": "PolynomialDerivative",
+            "projectName": "Tutorial 3 Code_7bba7699"
+        }
+    ]
+}
