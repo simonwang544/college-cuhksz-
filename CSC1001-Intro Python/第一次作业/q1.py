@@ -1,0 +1,6 @@
+x=float(input("Enter the final account Value:"))
+y=float(input("Enter the annual interest rate:"))
+z=float(input("Enter the number of years:"))
+m=float((1+y*0.01)**z)
+n=float(x/m)
+print("The initial value is",n)
