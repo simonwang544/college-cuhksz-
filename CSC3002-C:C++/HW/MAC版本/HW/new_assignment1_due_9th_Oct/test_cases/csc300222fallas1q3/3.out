@@ -1,0 +1,22 @@
+#include<iostream>
+#include<iomanip>
+
+
+int myfunc(){
+    std::cout << "hello world" << std::endl;
+    return 1;
+}
+
+
+
+int main(void)
+{
+    myfunc(); 
+
+    int a , b ;
+    a = 1; 
+    float c = a * b;
+    long long d = c / d;
+    short e = 1 / a * b + c*d - 2 / c;
+    std::cout <<a << " " << std::quoted(std::move(std::string("hello")));
+}

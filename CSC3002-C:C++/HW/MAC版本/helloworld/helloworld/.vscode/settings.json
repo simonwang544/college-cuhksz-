@@ -1,0 +1,15 @@
+{
+	"makefile.launchConfigurations": [
+		{
+			"cwd": "/Users/kinleylam/OneDrive/CSC3002/CPP/Assignment2",
+			"binaryPath": "/Users/kinleylam/OneDrive/CSC3002/CPP/Assignment2/Assignment2",
+			"binaryArgs": []
+		},
+		{
+			"cwd": "/Users/kinleylam/OneDrive/CSC3002/CPP/helloworld",
+			"binaryPath": "/Users/kinleylam/OneDrive/CSC3002/CPP/helloworld/helloworld",
+			"binaryArgs": []
+		}
+	]
+}
+

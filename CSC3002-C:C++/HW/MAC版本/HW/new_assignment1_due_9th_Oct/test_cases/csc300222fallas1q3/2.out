@@ -1,0 +1,23 @@
+#include <iostream>
+#include <fstream>
+#include "console.h"
+#include "filelib.h"
+using namespace std;
+
+
+void removeComments(istream & is, ostream & os);
+
+
+
+int main() {
+   ifstream infile;
+   promptUserForFile(infile, "Input file: ");
+   removeComments(infile, cout);
+   infile.close();
+   return 0;
+}
+
+
+void removeComments(istream & is, ostream & os) {
+  
+}

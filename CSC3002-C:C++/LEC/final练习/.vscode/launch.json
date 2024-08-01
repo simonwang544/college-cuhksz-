@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/oo/Desktop/csc3002/final练习",
+      "program": "/Users/oo/Desktop/csc3002/final练习/build/Debug/outDebug"
+    }
+  ]
+}

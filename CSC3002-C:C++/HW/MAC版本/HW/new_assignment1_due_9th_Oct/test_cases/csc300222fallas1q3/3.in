@@ -1,0 +1,26 @@
+#include<iostream>
+#include<iomanip>
+
+/*
+ * print the hello world in the stdout
+ * return 1
+ */
+int myfunc(){
+    std::cout << "hello world" << std::endl;
+    return 1;
+}
+
+/*
+ * main function defined here*/
+
+int main(void/*void means no args*/)
+{
+    myfunc(); // call once
+
+    int a /* arg1 */, b/* arg2 */ ;
+    a = 1; // b = 3; 
+    float c /*lalala*/= a * b;
+    long /**/long d = c / d;
+    short e = 1 / a * b + c*d - 2 / c;// hahaha
+    std::cout <</**/a << " " << std::quoted(std::move(std::string("hello")/*std::move*/)/*std::quoted*/);
+}
