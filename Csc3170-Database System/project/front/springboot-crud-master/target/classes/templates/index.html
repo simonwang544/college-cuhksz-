@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Information Query System</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /*body {*/
+        /*    font-family: Arial, sans-serif;*/
+        /*    margin: 0;*/
+        /*    padding: 0;*/
+        /*    background-color: #f4f4f4;*/
+        /*}*/
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('/img/bg.png');
+            background-color: #f0f8ff; /* 淡蓝色背景 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form input[type="text"],
+        form input[type="number"],
+        form input[type="submit"] {
+            padding: 8px;
+            margin: 5px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f2f2f2;
+        }
+        table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        table tbody tr:hover {
+            background-color: #ddd;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .modal h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .modal input[type="number"],
+        .modal input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .modal input[type="submit"],
+        .modal button {
+            width: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .modal input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .modal button {
+            background-color: #ccc;
+            color: #333;
+            margin-left: 20px;
+        }
+        .modal button:hover {
+            background-color: #ddd;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("form").submit(function (event) {
+                event.preventDefault();
+
+                var formData = {
+                    productID: $("input[name='productID']").val(),
+                    ISBN: $("input[name='ISBN']").val(),
+                    title: $("input[name='title']").val(),
+                    publicationYear: $("input[name='publicationYear']").val(),
+                    genre: $("input[name='genre']").val(),
+                    author: $("input[name='author']").val()
+                };
+
+                $.ajax({
+                    url: "http://localhost:9090/getBooks",
+                    type: "GET",
+                    data: formData,
+                    success: function (data) {
+                        $("#booksTable tbody").empty();
+                        if (data.length === 0) {
+                            $("#booksTable tbody").html("<tr><td colspan='7'>No data available</td></tr>");
+                        } else {
+                            $.each(data, function (index, book) {
+                                var newRow = $("<tr>");
+                                newRow.append("<td>" + book.productID + "</td>");
+                                newRow.append("<td>" + book.isbn + "</td>");
+                                newRow.append("<td>" + book.title + "</td>");
+                                newRow.append("<td>" + book.publicationYear + "</td>");
+                                newRow.append("<td>" + book.genre + "</td>");
+                                newRow.append("<td>" + book.author + "</td>");
+                                newRow.append("<td><button class='modify-button' data-product-id='" + book.productID + "'>Modify</button></td>");
+
+                                $("#booksTable tbody").append(newRow);
+                            });
+
+                            $(".modify-button").click(function() {
+                                var productID = $(this).data("product-id");
+                                var book = data.find(function(b) {
+                                    return b.productID === productID;
+                                });
+
+                                $("#modifyForm input[name='productID']").val(book.productID);
+                                $("#modifyForm input[name='ISBN']").val(book.isbn);
+                                $("#modifyForm input[name='title']").val(book.title);
+                                $("#modifyForm input[name='publicationYear']").val(book.publicationYear);
+                                $("#modifyForm input[name='genre']").val(book.genre);
+                                $("#modifyForm input[name='author']").val(book.author);
+
+                                $("#modifyModal").show();
+                            });
+                        }
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        console.error("AJAX request failed: " + textStatus, errorThrown);
+                    }
+                });
+            });
+
+            $("#modifyForm").submit(function(event) {
+                event.preventDefault();
+
+                var modifiedData = {
+                    productID: $("#modifyForm input[name='productID']").val(),
+                    isbn: $("#modifyForm input[name='ISBN']").val(),
+                    title: $("#modifyForm input[name='title']").val(),
+                    publicationYear: $("#modifyForm input[name='publicationYear']").val(),
+                    genre: $("#modifyForm input[name='genre']").val(),
+                    author: $("#modifyForm input[name='author']").val()
+                };
+
+                $.ajax({
+                    url: "http://localhost:9090/updateBook",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify(modifiedData),
+                    success: function (response) {
+                        console.log("Modification saved successfully:", response);
+                        $("#modifyModal").hide();
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        console.error("AJAX request failed: " + textStatus, errorThrown);
+                    }
+                });
+            });
+
+            $("#cancelModifyButton").click(function() {
+                $("#modifyModal").hide();
+            });
+            $("#saveModifyButton").click(function() {
+                $("#modifyModal").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Book Information Query System</h1>
+<form>
+    ProductID: <input type="number" value="" name="productID"><br>
+    ISBN: <input type="text" value="" name="ISBN"><br>
+    Title: <input type="text" value="" name="title"><br>
+    Publication Year: <input type="number" value="" name="publicationYear"><br>
+    Genre: <input type="text" value="" name="genre"><br>
+    Author: <input type="text" value="" name="author"><br>
+    <input type="submit" value="Search">
+</form>
+<table border="1px" id="booksTable">
+    <thead>
+    <tr>
+        <th>ProductID</th>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Publication Year</th>
+        <th>Genre</th>
+        <th>Author</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Data will be dynamically added here -->
+    </tbody>
+</table>
+
+<div class="modal" id="modifyModal">
+    <div class="modal-content">
+        <h2>Modify Book Information</h2>
+        <form id="modifyForm">
+            ProductID: <input type="number" name="productID" readonly><br>
+            ISBN: <input type="text" name="ISBN"><br>
+            Title: <input type="text" name="title"><br>
+            Publication Year: <input type="number" name="publicationYear"><br>
+            Genre: <input type="text" name="genre"><br>
+            Author: <input type="text" name="author"><br>
+            <input type="submit" value="Save" id="saveModifyButton">
+            <button type="button" id="cancelModifyButton">Cancel</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

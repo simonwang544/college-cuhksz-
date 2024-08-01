@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chenwenxing.demo.dao.BookDao">
+
+    <select id="getBookByMultipleConditions" resultType="com.chenwenxing.demo.entity.Book">
+        <!-- 查询语句 -->
+        SELECT * FROM book b WHERE 1 = 1
+
+        <!-- 条件查询 -->
+        <if test="productID != null and productID != 0">
+            AND b.ProductID = #{productID}
+        </if>
+        <if test="ISBN != null and ISBN.trim() != ''">
+            AND b.ISBN = #{ISBN}
+        </if>
+        <if test="title != null and title.trim() != ''">
+            AND b.Title = #{title}
+        </if>
+        <if test="publicationYear != null and publicationYear != 0">
+            AND b.PublicationYear = #{publicationYear}
+        </if>
+        <if test="genre != null and genre.trim() != ''">
+            AND b.Genre = #{genre}
+        </if>
+        <if test="author != null and author.trim() != ''">
+            AND b.Author = #{author}
+        </if>
+    </select>
+
+    <update id="updateBook" parameterType="com.chenwenxing.demo.entity.Book">
+        UPDATE book SET ISBN = #{isbn}, Title = #{title}, PublicationYear = #{publicationYear}, Genre = #{genre}, Author = #{author} WHERE ProductID = #{productID}
+    </update>
+
+</mapper>

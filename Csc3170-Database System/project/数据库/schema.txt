@@ -1,0 +1,18 @@
+User{UserID, UserName, Phone, Email, UserAddress}
+
+ExpressStation{StationID, StationLocation, Capacity, OpeningHours}
+Store{StoreID, StoreLocation, Capacity, StoreName}
+
+Staff{StaffID, StaffName, JoinDate, Salary, TeleNum, WorkingHours}
+Deliveryman{StaffID, PreferredArea}
+Salesperson{StaffID, SalesCommissionRatio, StoreID}
+
+Responsible{StaffID, StationID}
+
+Product{ProductID, Price, ProductCondition}
+Book{ProductID, ISBN, Title, PublicationYear, Genre, Author}
+Note{ProductID, TargetCourse}
+
+Porder{OrderID, OrderDate, OrderStatus, OrderType, TotalPrice, SalepersonID, UserID, DeliveryID, StationID}
+
+OrderProduct{OrderID, ProductID}

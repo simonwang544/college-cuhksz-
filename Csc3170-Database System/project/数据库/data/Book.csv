@@ -1,0 +1,171 @@
+ProductID,ISBN,Title,PublicationYear,Genre,Author
+158,1264268963,"Mike Meyers' CompTIA Network+ Certification Passport, Seventh Edition (Exam N10-008) (Mike Meyers' Certification Passport)",7-Jun-22,textbook,Jonathan Weissman
+1,1098119444,Rust Atomics and Locks,2023,textbook,Mara Bos
+22,1804619620,Terraform for Google Cloud Essential Guide,2023,textbook,Bernd Nordhausen
+63,1837630518,Mastering Linux Security and Hardening,2023,textbook,Donald A. Tevault
+104,1803242396,Microsoft Cybersecurity Architect Exam Ref SC-100,2023,textbook,Dwayne Natwick
+117,1718502702,"Python Crash Course, 3rd Edition",2023,textbook,Eric Matthes
+145,645127965,Learning Microsoft Intune,2023,textbook,Scott Duffey
+188,1098135121,Learning eBPF,2023,textbook,Liz Rice
+198,1804614017,Transitioning to Java,2023,textbook,Ken Fogel
+2,1119865905,"The Official ACT Prep Guide 2022-2023, (Book + Online Course)",2022,textbook,ACT
+8,1803362812,The Unofficial Zelda Cookbook,2022,textbook,Thibaud Villanova
+18,109811020X,Kubernetes: Up and Running,2022,textbook,Brendan Burns
+26,1803238011,Event-Driven Architecture in Golang,2022,textbook,Michael Stack
+41,168050696X,Powerful Command-Line Applications in Go,2022,textbook,Ricardo Gerardi
+52,180323654X,Mastering Windows Security and Hardening,2022,textbook,Mark Dunkerley
+53,1316519333,The Principles of Deep Learning Theory,2022,textbook,Daniel A. Roberts
+54,149322302X,Python 3,2022,textbook,Johannes Ernesti
+55,1840789336,Windows 11 for Seniors in easy steps,2022,textbook,Michael Price
+61,1098108302,Fundamentals of Data Engineering,2022,textbook,Joe Reis
+62,1803239867,Elevating Game Experiences with Unreal Engine 5,2022,textbook,Goncalo Marques
+65,1838430210,"Understanding Distributed Systems, Second Edition",2022,textbook,Roberto Vitillo
+71,1803240636,Microsoft Certified Azure Data Fundamentals (Exam DP-900) Certification Guide,2022,textbook,Marcelo Leite
+79,1803232579,Functional Python Programming,2022,textbook,Steven F. Lott
+86,1803241438,Learn Java 17 Programming,2022,textbook,Nick Samoylov
+94,1647824192,Power and Prediction,2022,textbook,Ajay Agrawal
+103,1801810214,An Ethical Guide to Cyber Anonymity,2022,textbook,Kushantha Gunawardana
+108,593450957,"Princeton Review AP World History: Modern Prep, 2023",2022,textbook,The Princeton Review
+112,1098118731,The Staff Engineer's Path,2022,textbook,Tanya Reilly
+122,1804613878,Clean Code in PHP,2022,textbook,Carsten Windler
+123,1098121953,C# 10 in a Nutshell,2022,textbook,Joseph Albahari
+124,1801072329,Learning Tableau 2022,2022,textbook,Joshua N. Milligan
+143,1801812446,"Unreal Engine 5 Character Creation, Animation, and Cinematics",2022,textbook,Henk Venter
+149,1801073872,Sculpting the Blender Way,2022,textbook,Xury Greer
+166,1801813094,Certified Ethical Hacker (CEH) v12 312-50 Exam Guide,2022,textbook,Dale Meredith
+170,63046067,Build,2022,textbook,Tony Fadell
+172,1956630198,Securing Microsoft 365,2022,textbook,Joe Stocker
+175,981166045X,Geometry of Deep Learning,2022,textbook,Jong Chul Ye
+177,1617299596,100 Go Mistakes and How to Avoid Them,2022,textbook,Teiva Harsanyi
+190,1119705150,MCA Microsoft Certified Associate Azure Administrator Study Guide,2022,textbook,Rithin Skaria
+4,1484274369,Learn to Program with Assembly,2021,textbook,Jonathan Bartlett
+15,1119787335,The Official ACT Mathematics Guide,2021,textbook,ACT
+28,1119787602,Python All-in-One For Dummies (For Dummies (Computer/Tech)),2021,textbook,John C. Shovic
+32,1119658810,AWS Certified Security Study Guide,2021,textbook,Marcello Zillo Neto
+33,1098117816,Software Architecture,2021,textbook,Neal Ford
+49,1737384426,Ultimate Go Notebook,2021,textbook,William Kennedy
+82,1492052590,Programming Rust,2021,textbook,Jim Blandy
+92,648098737,Raspberry Pi Operating System Assembly Language,2021,textbook,Bruce Smith
+102,1736526723,LFM,2021,textbook,Tim Bryant
+105,1718501544,Bug Bounty Bootcamp,2021,textbook,Vickie Li
+118,1801075271,Hands-On Microsoft Teams,2021,textbook,Joao Ferreira
+130,1801071101,Expert Python Programming,2021,textbook,Michal Jaworski
+135,1119846471,Windows 11 For Dummies,2021,textbook,Andy Rathbone
+139,1800562659,Microsoft Azure Security Technologies Certification and Beyond,2021,textbook,David Okeyode
+142,1617296864,"Deep Learning with Python, Second Edition",2021,textbook,Francois Chollet
+160,1838556370,Practical Threat Intelligence and Data-Driven Threat Hunting,2021,textbook,Valentina Costa-Gazcn
+163,1800569009,AWS Certified Machine Learning Specialty,2021,textbook,Somanath Nanda
+165,578973839,Ace the Data Science Interview,2021,textbook,Nick Singh
+180,1636100007,HTML and CSS QuickStart Guide,2021,textbook,David DuRocher
+182,1119830729,Excel All-in-One For Dummies (For Dummies (Computer/Tech)),2021,textbook,Paul McFedries
+185,1800560419,Data Engineering with AWS,2021,textbook,Gareth Eagar
+189,1492077216,Learning Go,2021,textbook,Jon Bodner
+194,1718501129,"Black Hat Python, 2nd Edition",2021,textbook,Justin Seitz
+29,1838987339,Unity 2020 Mobile Game Development,2020,textbook,John P. Doran
+95,1492043451,Fundamentals of Software Architecture,2020,textbook,Mark Richards
+99,1491952024,JavaScript,2020,textbook,David Flanagan
+126,173543115X,Hypothesis Testing,2020,textbook,Jim Frost
+128,149207294X,Practical Statistics for Data Scientists:,2020,textbook,Peter Bruce
+136,1492082791,Software Engineering at Google,2020,textbook,Titus Winters
+137,1800564244,CompTIA Security+,2020,textbook,Ian Neil
+153,1492045527,Deep Learning for Coders with Fastai and PyTorch:,2020,textbook,Jeremy Howard
+173,1423244230,Python Standard Library,2020,textbook,Berajah Jayne
+193,1951204042,A Programmer's Guide to Computer Science Vol. 2,2020,textbook,William M. Springer II
+69,1617293709,Grokking Deep Learning,2019,textbook,Andrew Trask
+162,1672429730,Kali Linux Hacking,2019,textbook,Ethem Mining
+178,1945051752,SQL QuickStart Guide,2019,textbook,Walter Shields
+183,1484250753,Beginning x64 Assembly Programming,2019,textbook,Jo Van Hoey
+192,1492050202,Linux Observability with BPF,2019,textbook,David Calavera
+10,1789347394,Mastering Windows Group Policy,2018,textbook,Jordan Krause
+16,1593278551,Linux Basics for Hackers,2018,textbook,OccupyTheWeb
+67,1544511817,YouTube Secrets:,2018,textbook,Sean Cannell
+155,1727521900,Computer Programming: The Bible,2018,textbook,CyberPunk Architects
+181,1788297237,Mastering Microsoft Power BI,2018,textbook,Brett Powell
+184,1484240626,Modern X86 Assembly Language Programming,2018,textbook,Daniel Kusswurm
+11,1549776673,Python,2017,textbook,Timothy C. Needham
+23,1546488332,Python (2nd Edition),2017,textbook,Jamie Chan
+36,154101636X,Blue Team Field Manual (BTFM) (RTFM),2017,textbook,Alan J White
+44,999081411,The Complete Software Developer's Career Guide,2017,textbook,John Sonmez
+66,692980652,Retro Game Dev: C64 Edition (RetroGameDev),2017,textbook,Derek Morris
+76,1617292230,Grokking Algorithms,2016,textbook,Aditya Bhargava
+120,1491927577,Linux Pocket Guide,2016,textbook, Daniel Barrett 
+12,3319130714,Data Structures and Algorithms with Python (Undergraduate Topics in Computer Science),2015,textbook,Kent D. Lee
+84,984782869,Cracking the Coding Interview,2015,textbook,Gayle Laakmann McDowell
+100,1119002257,Storytelling with Data,2015,textbook,Cole Nussbaumer Knaflic
+159,893037893,Programming the 65816,2015,textbook,David Eyes
+35,1449357016,Python Pocket Reference,2014,textbook,Mark Lutz
+70,133769402,Assembly Language for x86 Processors,2014,textbook,Kip Irvine
+75,1502958082,"xchg rax,rax",2014,textbook,xorpd
+171,1118008189,HTML and CSS,2011,textbook,Jon Duckett
+90,1572229160,Sql Guide (Quick Study,2005,textbook,Inc. BarCharts
+150,60972459,Tracks RI,2004,fiction,Louise Erdrich
+34,515135283,Without Fail,2003,fiction,Lee Child
+58,752215329,In Search of British Heroes: A Companion to the Channel 4 Series Fact or Fiction,2003,fiction,Tony Robinson
+119,446612618,A Kiss Remembered,2003,fiction,Sandra Brown
+134,373264771,"Crazy Love (Wwl Mystery, 477)",2003,fiction,Steve Brewer
+200,1593080603,The Prince and Other Writings (Barnes &amp; Noble Classics),2003,fiction,Niccolo Machiavelli
+14,451410602,Death's Door,2002,fiction,Michael Slade
+157,843949562,Judas Eyes,2002,fiction,Barry Hoffman
+51,373263716,Singing The Sadness (Worldwide Library Mysteries),2001,fiction,Reginald Hill
+74,1930353316,Secret Under the Floorboard (Sammy and Brian Mystery),2001,fiction,Ken Munro
+121,8481301485,El Amante De L. Chaterley,2001,fiction,D. H. Lawrence
+125,970575203,Tickles Tabitha's Cancer-tankerous Mommy,2001,fiction,Amelia Frahm
+19,156731399X,The Peaceful Warrior Collection,2000,fiction,Dan Millman
+21,553379690,One Hundred and One Ways,2000,fiction,MAKO YOSHIKAWA
+47,1578512611,Unleashing the Killer App: Digital Strategies for Market Dominance,2000,fiction,Larry Downes
+110,446521663,Host Family,2000,fiction,Mameve Medwed
+133,814806406,Bosch,2000,fiction,Joseph Emile Muller
+42,340728620,The Rainbow Journey,1999,fiction,Brenda Davies
+60,451198859,Never Sorry: A Leigh Koslow Mystery (Leigh Koslow Mystery Series),1999,fiction,Edie Claire
+73,1551664917,Charm School,1999,fiction,Susan Wiggs
+101,821762966,"Enduring Love (Zebra Bouquet Romances, No 6)",1999,fiction,Ann Josephson
+13,452011817,Africans and Their History,1998,fiction,Joseph E. Harris
+68,446606243,The Tenth Justice,1998,fiction,Brad Meltzer
+85,425163970,A Touch of the Grape (Hemlock Falls Mysteries),1998,fiction,Claudia Bishop
+30,157345320X,Praise to the Man,1997,fiction,Larry Barkdull
+37,1576730700,Wise Man's House (Palisades Pure Romance),1997,fiction,Melody Carlson
+56,671014730,SHE'S COME UNDONE (Oprah's Book Club (Hardcover)),1997,fiction,Wally Lamb
+64,804113475,Ladder of Years,1997,fiction,Anne Tyler
+129,590939599,Go Eat Worms! (Goosebumps Presents TV Book #9),1997,fiction,Tracey West
+48,192800442,The Dictionary of Cricket,1996,fiction,Michael Rundell
+89,380725150,Black Hornet (New Orleans Mystery),1996,fiction,James Sallis
+91,3499170523,Anatomie der menschlichen Destruktivit,1996,fiction,Erich Fromm
+151,28612434,The Unofficial Guide to Atlanta (3rd ed. Serial.),1996,fiction,Fred Brown
+156,225313998X,L'homme nu,1996,fiction,Simmons d.
+168,1565048628,"Court of All Kings: A Changeling : The Dreaming Novel (Immortal Eyes, Book 3)",1996,fiction,Jackie Cassada
+9,394576500,Mapplethorpe: A Biography,1995,fiction,Patricia Morrisroe
+25,030730261X,"Ready, Set, Go!: A Counting Book (Little Golden Book)",1995,fiction,Emma Jones
+38,847818721,Great Pasta Sauces,1995,fiction,Sally Griffiths
+83,8429729941,Reflexions de sala i alcova,1995,fiction,Ramon Solsona
+111,394825683,Emperors New Clothes,1995,fiction,Disney Book Club
+148,515117870,The Gambler,1995,fiction,Lois Greiman
+20,044990962X,Hero's Daughter,1994,fiction,Maureen Murdock
+107,345386663,Garfield Pulls His Weight (No. 26),1994,fiction,Jim Davis
+144,201633612,Design Patterns,1994,textbook,Erich Gamma
+106,679745963,The Man on the Balcony: The Story of a Crime (Vintage Crime/Black Lizard),1993,fiction,Maj Sjowall
+146,2253064459,"La Bicyclette bleue, tome 4 : Noir tango",1993,fiction,Rgine Deforges
+31,330311115,Greenmantle: A New Tale of Magic &amp; Wonder,1992,fiction,Charles De Lint
+59,080755393X,"The Mystery in the Snow (Boxcar Children Mysteries, 32)",1992,fiction,Gertrude Chandler Warner
+115,037382503X,"Tyler #3 Wisconsin Wedding (Tyler, No 3)",1992,fiction,Carla Neggers
+186,933478208,Chronic Fatigue Syndrome and the Yeast Connection: A Get-Well Guide for People With This Often Misunderstood Illness--And Those Who Care for Them,1992,fiction,William G. Crook
+45,75574179,A History of the Modern World,1991,fiction,R. R. Palmer
+57,937721735,All-American Low-Fat Meals in Minutes: Recipes and Menus for Special Occasions or Every Day,1991,fiction,M.J. Smith
+114,804106665,Paris 2005,1991,fiction,Carlo Zezza
+179,821734970,Defiant Ecstasy,1991,fiction,Janelle Taylor
+199,821732056,Wild Texas Heart,1990,fiction,Deana James
+140,671677128,LIGHT A SINGLE CANDLE,1989,fiction,David Butler
+43,345330021,"King of the Murgos (Malloreon, Book 2)",1988,fiction,David Eddings
+46,440486815,Thimble Summer (Yearling Newbery),1987,fiction,Elizabeth Enright
+141,517480859,Walt Disney World and Epcot Center,1986,fiction,V. Childs
+197,394744292,The Firefighter's Cookbook,1986,fiction,John Sineno
+191,723002746,Times Concise Atlas of the World,1985,fiction,Times Books
+77,912697083,The Crooked Pitch: An Account of the Curveball in American Baseball History,1984,fiction,Martin Quigley
+93,195032721,Science Fiction: A Historical Anthology (Galaxy Books),1983,fiction,Eric S. Rabkin
+152,910313059,"Caring Is What Counts, No. 5 (Tale from the Care Bears)",1983,fiction,Ward Johnson
+196,380545020,Bet You Can't!,1983,fiction,Vicki Cobb
+138,553246526,Incredible Journey,1978,fiction,Sheila Burnford
+97,807041653,Beyond God the Father Toward a Philosoph,1974,fiction,Mary Daly
+24,080246520X,Pilgrims Progress: In Today's English,1964,fiction,John Bunyan
+40,525230211,"Water dog: revolutionary rapid training method,",1964,fiction,Richard A Wolters
+187,451626222,Ovid the Metamorphoses,1960,fiction,Horace Gregory
+164,525459243,Winnie the Pooh Storybook Treasury,0,fiction,A A Milne
